@@ -20,7 +20,7 @@ Exploring spam detection through Machine Learning
 
 ## [spamDetection_withGloveEmbeddings.ipynb](https://github.com/Kcnarf/spamDetectionWithML/blob/master/spamDetection_withGloveEmbeddings.ipynb)
  - experimentation based on [Using pre-trained word embeddings](https://keras.io/examples/nlp/pretrained_word_embeddings/#load-pretrained-word-embeddings)
- - reuse GloVe embeddings (instead of the trainable keras.preprocessing.text.Tokenizer of the previous experimentation) :
+ - reuse [GloVe](https://github.com/stanfordnlp/GloVe) language model (instead of the trainable keras.preprocessing.text.Tokenizer of the previous experimentation); GloVe defines high dimension embeddings of most used english words; language model computed on millions of documents
  - compared to previous expérimentation :
    - the model has now 2 distincts parts :
      - the embedding part which reuses the GloVe language model, and doest not need to be trained (because spams are general purpose issue, no need to focus/specialize embeddings on a particular semantic field)
